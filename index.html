@@ -214,7 +214,7 @@
     }
 
     .feature-section:hover .icon-box i {
-      text-shadow: 0 0 15px rgba(102, 153, 255, 0.7);
+      /* text-shadow: 0 0 15px rgba(102, 153, 255, 0.7); */
     }
 
     .swiper {
@@ -242,11 +242,12 @@
       box-shadow: 0 0 40px rgba(102, 153, 255, 0.2);
     }
 
-    .swiper-slide img {
-      height: auto;
-      object-fit: cover;
-      border-radius: 16px;
-    }
+   .swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+}
 
     @media (max-width: 768px) {
       .title-main {
@@ -371,9 +372,12 @@
 
 <script>
   const slides = [
-    "https://images.samsung.com/is/image/samsung/assets/dotcom/mobile/july/july-004---how-to-use-scroll-capture-on-a-galaxy-smartphone/uk/2-britishenglish-images-how-to-use-scroll-capture.png?$624_N_PNG$",
-    "https://images.samsung.com/is/image/samsung/assets/dotcom/mobile/july/july-004---how-to-use-scroll-capture-on-a-galaxy-smartphone/uk/2-britishenglish-images-how-to-use-scroll-capture.png?$624_N_PNG$",
-    "https://images.samsung.com/is/image/samsung/assets/dotcom/mobile/july/july-004---how-to-use-scroll-capture-on-a-galaxy-smartphone/uk/2-britishenglish-images-how-to-use-scroll-capture.png?$624_N_PNG$"
+    "https://media-hosting.imagekit.io/e816e9ba7e11448d/m3.png?Expires=1841907757&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=T8NkV0mSagzW4Tcs828k3AmYGUvg~qjylu41oSbOeVfJsFA8bY2yo~eOPi~JoOdyxjiAAOJ4Qmw-RmisoSCl580pzTbDQpkBCobD1g~RKZSu7fHzzUZTvNKt7DKre7o2nx2eY1V~O-i7R~DXtQuqBheE6kqD8GKfbT5Vd~km7TTGajw4x2hvxkUdDlI8Zpcbo88P4o19QRMniGtM91VBjjGUv2FE0vLq~ww0VucDQRbp3pqJzdhK49MAlfAUwQLJNIGR0AHazuC80BQVet-zd6q9RrBSkAxxMDhPR4ii8updd3pUqpPjjZU~q8rl~xa6rfVSQUOlM4TW5Dtqi2n9GQ__",
+    "https://media-hosting.imagekit.io/8d9523d4f2504475/m2.png?Expires=1841907757&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=cH4MbBMEz027yOyt2T1D~ZL1Z2GeQO9UvHDUSX~Y1ND2TIrQIr0cEEBK-5S0Sz0gpz76e1mIGkv1HLp6EliiVysIM3uZU1mxRlXPJuu7tePu765LiWKwouu1DsDqnZd5AfYl5TMWgm8aJTq~uU4noBw02gGVkjsT61AxD8C4kCyJso20m9vDPr3HRhJDpbngQyYtS2W2hQsZ~O3X0IAXF7lw88GXpSxNLIkLZG8Zflh4~9TRUiiBBxOfs37oG0Fa7GmjU9ENTLNO0GEJ6yHXbl~GYk3n2L5D2OFH5ED276JZXyBYx2Ay4kv5K6ViGoMa8eChNdoKtT-bEpjx8YKxWA__",
+    "https://media-hosting.imagekit.io/fcb82f6d91444500/m1.png?Expires=1841907757&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=xBMqVxHQQ89LfzwYYBVV9PQw834rmb4Mzw54rtCL0BItcCPO~fB-HAuQiBIgsCPGVCZcOmyEgrEEFJAQxkKhHxLGMqeMXwJd-jyat6SK3GkltV4yypIcVFvPaGBxrTZEQqf295G-8gQgIKpfUNHgBTpZ4vgxtDRSqfuZXfa1mmgcUFYyp9wCJURllrLZpv6dHPzmsmfK4xRtn-x19otJQ0h0keeDdpZeT1Ra5-Y6OC5uWmfbJUyqd5mEfWDxyHB9uAUBeV9qKa2DuX~AAKjhMqcZJKdckPXRyLQUkwj3EEx0-pO~sSwbH-aAnqyTTDOysVHztNVu7b4xv3SWKZ2egg__",
+    "https://media-hosting.imagekit.io/e816e9ba7e11448d/m3.png?Expires=1841907757&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=T8NkV0mSagzW4Tcs828k3AmYGUvg~qjylu41oSbOeVfJsFA8bY2yo~eOPi~JoOdyxjiAAOJ4Qmw-RmisoSCl580pzTbDQpkBCobD1g~RKZSu7fHzzUZTvNKt7DKre7o2nx2eY1V~O-i7R~DXtQuqBheE6kqD8GKfbT5Vd~km7TTGajw4x2hvxkUdDlI8Zpcbo88P4o19QRMniGtM91VBjjGUv2FE0vLq~ww0VucDQRbp3pqJzdhK49MAlfAUwQLJNIGR0AHazuC80BQVet-zd6q9RrBSkAxxMDhPR4ii8updd3pUqpPjjZU~q8rl~xa6rfVSQUOlM4TW5Dtqi2n9GQ__",
+    "https://media-hosting.imagekit.io/8d9523d4f2504475/m2.png?Expires=1841907757&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=cH4MbBMEz027yOyt2T1D~ZL1Z2GeQO9UvHDUSX~Y1ND2TIrQIr0cEEBK-5S0Sz0gpz76e1mIGkv1HLp6EliiVysIM3uZU1mxRlXPJuu7tePu765LiWKwouu1DsDqnZd5AfYl5TMWgm8aJTq~uU4noBw02gGVkjsT61AxD8C4kCyJso20m9vDPr3HRhJDpbngQyYtS2W2hQsZ~O3X0IAXF7lw88GXpSxNLIkLZG8Zflh4~9TRUiiBBxOfs37oG0Fa7GmjU9ENTLNO0GEJ6yHXbl~GYk3n2L5D2OFH5ED276JZXyBYx2Ay4kv5K6ViGoMa8eChNdoKtT-bEpjx8YKxWA__",
+    "https://media-hosting.imagekit.io/fcb82f6d91444500/m1.png?Expires=1841907757&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=xBMqVxHQQ89LfzwYYBVV9PQw834rmb4Mzw54rtCL0BItcCPO~fB-HAuQiBIgsCPGVCZcOmyEgrEEFJAQxkKhHxLGMqeMXwJd-jyat6SK3GkltV4yypIcVFvPaGBxrTZEQqf295G-8gQgIKpfUNHgBTpZ4vgxtDRSqfuZXfa1mmgcUFYyp9wCJURllrLZpv6dHPzmsmfK4xRtn-x19otJQ0h0keeDdpZeT1Ra5-Y6OC5uWmfbJUyqd5mEfWDxyHB9uAUBeV9qKa2DuX~AAKjhMqcZJKdckPXRyLQUkwj3EEx0-pO~sSwbH-aAnqyTTDOysVHztNVu7b4xv3SWKZ2egg__"
   ];
 
   const slideHolder = document.getElementById("slideHolder");
@@ -393,7 +397,7 @@
     spaceBetween: 30,
     effect: "coverflow",
     autoplay: {
-      delay: 1000,
+      delay: 1700,
       disableOnInteraction: false,
     },
     coverflowEffect: {
@@ -404,7 +408,7 @@
     breakpoints: {
       320: { slidesPerView: 1 },
       500: { slidesPerView: 1.2 },
-      768: { slidesPerView: 2.2 }
+      768: { slidesPerView: 2 }
     }
   });
 
